@@ -1,5 +1,8 @@
 require "html_processor/version"
+require "html_processor/processor"
 
 module HtmlProcessor
-  # Your code goes here...
+  def self.create(*args)
+    Processor.new(*args)
+  end
 end
